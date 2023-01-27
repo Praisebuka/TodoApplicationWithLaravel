@@ -2,7 +2,7 @@
 # TodoApp
 This App Was Created as a normal repo and also Sponsored By my humble self.
 
-## Authors
+## Author
 
 - [@Praisebuka]('https://github.com/Praisebuka')
 
