@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\TheFormController;
+use App\Models\theForm;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//The route for making the first create function using the get method
+Route::get('/', [TheFormController::class, 'index']);
+
+//The route for then saving the collected data into the database using the post method.
+Route::post('/', [TheFormController::class, 'store']);
+
+//The route for updating or mark a todo as done 
+Route::patch('/{todo}', [TheFormController::class, 'update']);
+
