@@ -39,6 +39,13 @@ class TheFormController extends Controller
         return redirect('/');
     }
 
+    public function edit(theForm $todo) 
+    {
+        $todo->edit(['isDone' => true]);
+
+        return redirect('/');
+    }
+
     public function delete(theForm $todo)
     {
         //For deleteing a particular Todo

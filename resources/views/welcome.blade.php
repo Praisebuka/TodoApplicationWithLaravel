@@ -18,6 +18,7 @@
     </head>
 
     <body class="bg-gray-200 p-4">
+        <img src="{{ asset('/public/asset/images/background.jpg') }}" alt="description of myimage">
         <div class="lg:w-2/4 mx-auto py-8 px-6 bg-white rounded-xl">
             <h1 class="font-bold text-5xl text-center mb-8">
                 Todo App with Laravel
@@ -49,7 +50,7 @@
                     >
                         <div class="flex-1 pr-8">
                             <h3 class="text-lg font-semibold">{{ $todo->title }}</h3>
-                            <p class="text-gray-500">{{ $todo->description }}/p>
+                            <p class="text-gray-500">{{ $todo->description }}</p>
                         </div>
 
                         <div class="flex space-x-3">
@@ -60,6 +61,15 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
                                     </svg>
+                                </button>
+                            </form>
+                            <form method="POST" action="/{{ $todo->id }}">
+                                @csrf
+                                @method('PUT')
+                                <button class="py-2 px-2 bg-blue-500 text-white rounded-xl">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                                      </svg>                                      
                                 </button>
                             </form>
 
