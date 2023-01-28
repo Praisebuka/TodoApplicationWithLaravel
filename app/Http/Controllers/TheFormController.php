@@ -39,7 +39,7 @@ class TheFormController extends Controller
         return redirect('/');
     }
 
-    public function edit(theForm $todo) 
+    public function edit( $todo) 
     {
         $todo->edit(['isDone' => true]);
 
