@@ -24,9 +24,6 @@ Route::post('/', [TheFormController::class, 'store']);
 //The route for updating or mark a todo as done 
 Route::patch('/{todo}', [TheFormController::class, 'update']);
 
-//The route for editing a Todo
-Route::edit('/{todo}', [TheFormController::class, 'edit']);
-
 //The route for deleting a Todo item 
 Route::delete('/{todo}', [theFormController::class, 'delete']);
 
