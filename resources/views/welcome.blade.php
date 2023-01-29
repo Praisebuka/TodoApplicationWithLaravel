@@ -18,7 +18,6 @@
     </head>
 
     <body class="bg-gray-200 p-4">
-        <img src="{{ asset('/public/asset/images/background.jpg') }}" alt="description of myimage">
         <div class="lg:w-2/4 mx-auto py-8 px-6 bg-white rounded-xl">
             <h1 class="font-bold text-5xl text-center mb-8">
                 Todo App with Laravel
