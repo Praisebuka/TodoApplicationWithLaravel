@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FallbackController;
 use App\Http\Controllers\TheFormController;
 use App\Models\theForm;
 use Illuminate\Support\Facades\Route;
@@ -26,4 +27,7 @@ Route::patch('/{todo}', [TheFormController::class, 'update']);
 
 //The route for deleting a Todo item 
 Route::delete('/{todo}', [theFormController::class, 'delete']);
+
+# Fallback routeing for unavailable urls
+Route::fallback( FallbackController::class, '__invoke');
 

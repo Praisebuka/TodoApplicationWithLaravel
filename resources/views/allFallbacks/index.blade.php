@@ -13,14 +13,13 @@
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
-                background-image: url('/public/images/background.jpg');
             }
         </style>
     </head>
 
-    <body class="bg-gray-200 p-4 ">
+    <body class="bg-gray-200 p-4">
 
-        <img src="/public/images/background.jpg" alt="check">
+        <img src="{{ URL('/public/images/background.jpg')}}" alt="check">
 
         <div class="lg:w-2/4 mx-auto py-8 px-6 bg-white rounded-xl">
             <h1 class="font-bold text-5xl text-center mb-8">

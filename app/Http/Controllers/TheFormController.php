@@ -46,4 +46,5 @@ class TheFormController extends Controller
 
         return redirect('/');
     }
+
 }
