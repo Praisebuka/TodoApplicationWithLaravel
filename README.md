@@ -36,7 +36,7 @@ Praise Ebuka is a Full-stack developer with a passion for solving problems and a
 As a developer, Praise is known for his consistency, attention to detail, and ability to work well in team environments. He is always open to new challenges and approaches, and is committed to staying up-to-date with the latest technologies and best practices in the field.
 In addition to his technical expertise, Praise has excellent communication skills and is able to effectively translate complex technical concepts into language that is easy for non-technical clients to understand. He is able to balance multiple projects and priorities, and consistently meets deadlines.
 Praise is dedicated to delivering exceptional results for his clients and is always looking for opportunities to take on new projects and continue growing as a developer.
-Get to know more about Praise. Send him a mail at
+Get to know more about Praise. Send me a mail at
 praise.njoga@gmail.com
 
 
@@ -51,7 +51,7 @@ praise.njoga@gmail.com
 
 
 ## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://praisebuka.netlify.com/)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://thepraise.netlify.com/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/praisebuka)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/PraiseEbuka1)
 
