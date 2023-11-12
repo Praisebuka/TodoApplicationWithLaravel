@@ -13,17 +13,25 @@
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
-                background-image: url('/public/images/background.jpg');
+                /* background-image: url('/images/nice.png'); */
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 100vh;
+            }
+            .gradient-text {
+                background: linear-gradient(to right, #3498db, #2ecc71);
+                -webkit-background-clip: text; /* For Safari */
+                color: transparent;
             }
         </style>
     </head>
 
-    <body class="bg-gray-200 p-4 ">
+    <body class="bg-gray-200 p-4">
 
-        <img src="/public/images/background.jpg" alt="check">
+        <img src="/images/background.jpg" alt="icon_image" width="60px" height="60px">
 
-        <div class="lg:w-2/4 mx-auto py-8 px-6 bg-white rounded-xl">
-            <h1 class="font-bold text-5xl text-center mb-8">
+        <div class="lg:w-2/4 mx-auto py-8 px-6 bg-white rounded-xl mt-12">
+            <h1 class="gradient-text font-bold text-5xl text-center mb-8">
                 Todo App with Laravel
             </h1>
 
@@ -31,12 +39,15 @@
                 <form class="flex flex-col space-y-4" method="POST" action="/">
                     @csrf
                     <!---The above CSRF had already made the whole linking to the controller from the "action='/'" ---->
-                    <input type="text" name="title" placeholder="theTodoTitle" class="py-3 px-4 bg-gray-100 rounded-xl">
+                    <input type="text" name="title" placeholder="Your Todo title" class="py-3 px-4 bg-gray-100 rounded-xl">
                     
-                    <textarea name="description" placeholder="the description of your Todo" class="py-3 px-4 bg-gray-100 rounded-xl"></textarea>
-                    <button class="w-40 py-4 px-8 bg-green-500 text-white rounded-xl">
-                        Add-Items
-                    </button>
+                    <textarea name="description" placeholder="Your Todo description" class="py-3 px-4 bg-gray-100 rounded-xl"></textarea>
+                    
+                    <div class="text-center">
+                        <button class="w-40 py-4 px-8 bg-green-500 text-white rounded-xl">
+                            Add-Items
+                        </button>
+                    </div>
                 </form>
             </div>
 
