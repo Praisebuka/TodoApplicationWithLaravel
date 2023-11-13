@@ -13,7 +13,6 @@
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
-                /* background-image: url('/images/nice.png'); */
                 background-repeat: no-repeat;
                 width: 100%;
                 height: 100vh;
