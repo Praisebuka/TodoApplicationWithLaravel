@@ -13,9 +13,7 @@ class TheFormController extends Controller
         $todos = theForm::all();
 
         //Taking the created Todos from the user 
-        return view('welcome', [
-            'todos' => $todos
-        ]);
+        return view('welcome', [ 'todos' => $todos ]);
     }
 
     public function store() 
@@ -31,7 +29,13 @@ class TheFormController extends Controller
         return redirect('/');
     }
 
-    public function update(theForm $todo) 
+    public function update() {
+        $todos = theForm::all();
+
+        return view('update.edit', [ 'todos' => $todos]);
+    }
+
+    public function done(theForm $todo) 
     {
         //For updateing a particular Todo
         $todo->update(['isDone'=> true]);
