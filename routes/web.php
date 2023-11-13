@@ -22,8 +22,11 @@ Route::get('/', [TheFormController::class, 'index']);
 //The route for then saving the collected data into the database using the post method.
 Route::post('/', [TheFormController::class, 'store']);
 
-//The route for updating or to mark a todo as done 
-Route::patch('/{todo}', [TheFormController::class, 'update']);
+//The route for marking a todo as done 
+Route::patch('/{todo}', [TheFormController::class, 'done']);
+
+//The route for updating a Todo 
+Route::put('/{todo}', [TheFormController::class, 'update']);
 
 //The route for deleting a Todo item 
 Route::delete('/{todo}', [theFormController::class, 'delete']);
