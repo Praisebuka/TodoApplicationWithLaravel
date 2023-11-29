@@ -29,7 +29,7 @@ class TheFormController extends Controller
         return redirect('/');
     }
 
-    public function update() {
+    public function update() { 
         $todos = theForm::all();
 
         return view('update.edit', [ 'todos' => $todos]);
