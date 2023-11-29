@@ -9,19 +9,19 @@ class TheFormController extends Controller
 {
     public function index()
     {
-        //Showing what was stored in the database
+        # Showing what was stored in the database
         $todos = theForm::all();
 
-        //Taking the created Todos from the user 
+        # Taking the created Todos from the user 
         return view('welcome', [ 'todos' => $todos ]);
     }
 
     public function store() 
     {
-        //And then storing it right here in the database.
+        # And then storing it right here in the database.
         $attributes = request()->validate([
-            'title' => 'required',
-            'description' => 'nullable'
+            'title' => 'required', 
+            'description' => 'nullable' 
         ]);
 
         theForm::create($attributes);
@@ -37,7 +37,7 @@ class TheFormController extends Controller
 
     public function done(theForm $todo) 
     {
-        //For updateing a particular Todo
+        # For updateing a particular Todo
         $todo->update(['isDone'=> true]);
 
         return redirect('/');
@@ -45,7 +45,7 @@ class TheFormController extends Controller
 
     public function delete(theForm $todo)
     {
-        //For deleteing a particular Todo
+        # For deleteing a particular Todo
         $todo->delete(['isDone' => true]);
 
         return redirect('/');
