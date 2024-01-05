@@ -30,7 +30,7 @@
 
         <img src="/images/background.jpg" alt="icon_image" width="60px" height="60px">
 
-        <div class="lg:w-2/4 mx-auto py-8 px-6 bg-white rounded-xl mt-12">
+        <div class="lg:w-2/3 mx-auto py-8 px-6 bg-white rounded-xl mt-12">
             <h1 class="gradient-text font-bold text-5xl text-center mb-8">
                 Todo App with Laravel
             </h1>
