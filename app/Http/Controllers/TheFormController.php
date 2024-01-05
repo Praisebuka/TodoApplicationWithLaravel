@@ -20,10 +20,10 @@ class TheFormController extends Controller
     }
 
     public function store() 
-    {
+    { 
         # And then storing it right here in the database.
         $attributes = request()->validate([
-            'title' => 'required', 
+            'title' => 'required|string', 
             'description' => 'nullable' 
         ]);
 
