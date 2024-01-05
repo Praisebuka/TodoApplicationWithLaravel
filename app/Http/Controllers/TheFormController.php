@@ -9,7 +9,7 @@ class TheFormController extends Controller
 {
     public function index()
     {
-        # Showing what was stored in the database
+        # Showing what was stored in the database 
         $todos = theForm::all();
         $done = 'Mark this todo as done';
         $edit = 'Click this to edit this item';
