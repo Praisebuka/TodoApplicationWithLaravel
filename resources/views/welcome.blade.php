@@ -35,7 +35,7 @@
                 Todo App with Laravel
             </h1>
 
-            <div class="mb-6">
+            <div class="mb-6"> 
                 <form class="flex flex-col space-y-4" method="POST" action="/">
                     @csrf
                     <!---The above CSRF had already made the whole linking to the controller from the "action='/'" ---->
@@ -43,8 +43,8 @@
                     
                     <textarea name="description" placeholder="Your Todo description" class="py-3 px-4 bg-gray-100 rounded-xl"></textarea>
                     
-                    <div class="text-center">
-                        <button class="w-40 py-4 px-8 bg-green-500 text-white rounded-xl">
+                    <div class="text-center text-2xl">
+                        <button class="w-64 h-20 py-4 px-8 bg-green-500 text-white rounded-xl font-bold">
                             Add-Items
                         </button>
                     </div>
