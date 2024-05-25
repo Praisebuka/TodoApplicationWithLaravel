@@ -5,7 +5,7 @@ use App\Http\Controllers\TheFormController;
 use App\Models\theForm;
 use Illuminate\Support\Facades\Route;
 
-/*  
+/*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
